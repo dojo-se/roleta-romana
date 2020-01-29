@@ -15,5 +15,14 @@ describe('Teste', () => {
     };
     expect(expectResp).toEqual(expectResult);
   });
+  
+  test(`Testa caso base`, () => {
+    const expectResp = roleta(1, 2, 1);
+    const expectResult = {
+      ordem: [],
+      sobrevivente: 1
+    };
+    expect(expectResp).toEqual(expectResult);
+  });
 
 });
