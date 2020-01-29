@@ -6,9 +6,9 @@ Todos ficaram em círculo e, começando em um determinado ponto, em sentido hor�
 
 Para se preparar para uma situação como essa, escreva um programa que determine qual posição você deve ficar no círculo para poder sobreviver. Você deverá informar a quantidade de pessoas no círculo (n > 0), a posição da pessoa que irá começar o suicídio (1 <= i <= n) e o "passo", isto é, de quantas em quantas pessoas, deverá ser morta (k > 0)
 
-n > 0 pessoas são organizada em um círculo, numeradas de 1 a n em sentido horário;
-Iniciando na pessoa i, conta-se no sentido horário, até que se chegue na pessoa de valor k (k > 0), que é rapidamente morta.
-Continuamos a contar k pessoas no sentido horário, a partir da pessoa a esquerda da que foi morta.
-Esse processo é repetido indefinidamente, até que apenas uma pessoa seja a sobrevivente.
+- n > 0 pessoas são organizada em um círculo, numeradas de 1 a n em sentido horário;
+- Iniciando na pessoa i, conta-se no sentido horário, até que se chegue na pessoa de valor k (k > 0), que é rapidamente morta.
+- Continuamos a contar k pessoas no sentido horário, a partir da pessoa a esquerda da que foi morta.
+- Esse processo é repetido indefinidamente, até que apenas uma pessoa seja a sobrevivente.
 
 Por exemplo quando n = 5, k = 2 e i = 1, a ordem de execuções é 2, 5, 3, e 1. O sobrevivente é 4.
