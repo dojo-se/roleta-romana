@@ -1,4 +1,4 @@
-import { main, roleta } from './index';
+import { main, roleta, matar } from './index';
 
 describe('Teste', () => {
 
@@ -16,6 +16,7 @@ describe('Teste', () => {
     expect(expectResp).toEqual(expectResult);
   });
   
+  
   test(`Testa caso base`, () => {
     const expectResp = roleta(1, 2, 1);
     const expectResult = {
@@ -24,5 +25,12 @@ describe('Teste', () => {
     };
     expect(expectResp).toEqual(expectResult);
   });
+
+  test(`Testa a funcao de matar`, () => {
+    const expectResp = matar(2, 2, 1);
+    const expectResult = [1];
+    expect(expectResp).toEqual(expectResult);
+  });
+
 
 });
