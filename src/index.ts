@@ -25,5 +25,9 @@ export const matar = (n: number, k: number, i: number) => {
     indice = (indice + k) % n
   }
   return mortos;
+}
 
+export const sobreviventes = (coletivo = [], mortos = []) => {
+  const res = coletivo.find(pessoa => !mortos.includes(pessoa));
+  return res;
 }
