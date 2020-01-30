@@ -11,7 +11,7 @@ describe('Teste', () => {
     const expectResp = roleta(5, 2, 1);
     const expectResult = {
       ordem: [2, 5, 3, 1],
-      sobrevivente: 1
+      sobrevivente: 4
     };
     expect(expectResp).toEqual(expectResult);
   });
@@ -45,6 +45,16 @@ describe('Teste', () => {
     const expectResp = sobreviventes(coletivo, mortos);
     expect(expectResp).toEqual(4);
   });
+
+  test(`Testa a roleta final`, () => {
+    const expectResp = roleta(5, 2, 1);
+    const expectResult = {
+      ordem: [2, 5, 3, 1],
+      sobrevivente: 4
+    };
+    expect(expectResp).toEqual(expectResult);
+  });
+
 
 
 

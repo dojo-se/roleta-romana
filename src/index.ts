@@ -10,14 +10,18 @@ export const roleta = (n: number, k: number, i: number) => {
     } 
   }
 
+  const mortos = matar(n, k, i);
+  const coletivo = range(n);
   return {
-    ordem: [2, 5, 3, 1],
-    sobrevivente: 1
+    ordem: mortos,
+    sobrevivente: sobreviventes(coletivo, mortos)
   }
 }
 
+const range = (n:number) => Array.from(new Array(n)).map((_, i) => i+1)
+
 export const matar = (n: number, k: number, i: number) => { 
-  const coletivo = Array.from(new Array(n)).map((_, i) => i+1)
+  const coletivo = range(n);
   let mortos: number[] = []
   let indice = i-1
   while (coletivo.length - mortos.length> 1) {
@@ -27,7 +31,7 @@ export const matar = (n: number, k: number, i: number) => {
   return mortos;
 }
 
-export const sobreviventes = (coletivo = [], mortos = []) => {
+export const sobreviventes = (coletivo:any[] = [], mortos:any[] = []) => {
   const res = coletivo.find(pessoa => !mortos.includes(pessoa));
   return res;
 }
