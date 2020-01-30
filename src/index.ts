@@ -18,13 +18,12 @@ export const roleta = (n: number, k: number, i: number) => {
 
 export const matar = (n: number, k: number, i: number) => { 
   const coletivo = Array.from(new Array(n)).map((_, i) => i+1)
-  const mortos: number[] = []
-  let indice = i
+  let mortos: number[] = []
+  let indice = i-1
   while (coletivo.length - mortos.length> 1) {
-    mortos.push(indice)
+    mortos = [indice+1,...mortos]
     indice = (indice + k) % n
   }
-  console.log(mortos)
-  return mortos
+  return mortos;
 
 }

@@ -31,6 +31,13 @@ describe('Teste', () => {
     const expectResult = [1];
     expect(expectResp).toEqual(expectResult);
   });
+  
+  test(`Testa a funcao de matar n==5`, () => {
+    const expectResp = matar(5, 2, 1);
+    const expectResult = [2, 5, 3, 1];
+    expect(expectResp).toEqual(expectResult);
+  });
+
 
 
 });
