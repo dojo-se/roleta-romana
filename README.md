@@ -12,3 +12,22 @@ Para se preparar para uma situação como essa, escreva um programa que determin
 - Esse processo é repetido indefinidamente, até que apenas uma pessoa seja a sobrevivente.
 
 Por exemplo quando n = 5, k = 2 e i = 1, a ordem de execuções é 2, 5, 3, e 1. O sobrevivente é 4.
+
+
+# Overview
+
+## O foi bom / aprendemos
+- interação
+- primeiro dojo
+- primeira interação com a linguagem
+- cada um teve contato com o código e resolveu da sua forma até chegar em um consenso
+- a forma com que cada um abstraiu o problema
+- divertido
+
+## O que foi ruim / pode melhorar
+- entender o problema foi demorado
+- sugerir a linguagem anteriormente (????)
+- cafée
+- sortear problemas
+- musica ambiente
+- coffee break
